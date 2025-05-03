@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsx src/index.ts",
     "start:dev": "tsx --watch src/index.ts",
-    "build": "tsup src"
+    "build": "tsup src",
+    "commit": "cz"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "@eslint/json": "^0.12.0",
     "@eslint/markdown": "^6.4.0",
     "@types/node": "^22.14.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.25.1",
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-prettier": "^5.2.6",
@@ -37,5 +39,10 @@
   },
   "dependencies": {
     "express": "^5.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
