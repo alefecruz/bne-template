@@ -8,7 +8,7 @@
     "start": "tsx src/index.ts",
     "start:dev": "tsx --watch src/index.ts",
     "build": "tsup src",
-    "commit": "cz"
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-prettier": "^5.2.6",
     "globals": "^16.0.0",
+    "husky": "^9.1.7",
     "prettier": "3.5.3",
     "tsup": "^8.4.0",
     "tsx": "^4.19.3",
